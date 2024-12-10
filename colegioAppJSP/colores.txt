@@ -1,0 +1,12 @@
+rojo
+verde
+azul
+gris
+amarillo
+negro
+blanco
+celeste
+violeta
+bordo
+purpura
+marron

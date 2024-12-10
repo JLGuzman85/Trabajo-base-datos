@@ -1,0 +1,29 @@
+-- Active: 1733526205898@@127.0.0.1@3306@colegio
+
+drop database if exists colegio;
+create database colegio;
+use colegio;
+drop table if exists alumnos;
+drop table if exists cursos;
+create table cursos(
+    id int auto_increment primary key,
+    titulo varchar(50) not null, -- check(length(titulo>=2)),
+    profesor varchar(50) not null, -- check(length(profesor>=2)),
+    dia enum('LUNES','MARTES','MIERCOLES','JUEVES','VIERNES') not null,
+    turno enum('MAÑANA','TARDE','NOCHE') not null
+);
+create table alumnos(
+    id int auto_increment primary key,
+    nombre varchar(50) not null, -- check(length(nombre>=2)),
+    apellido varchar(50) not null, -- check(length(apellido>=2)),
+    edad int not null check(edad>=18 and edad<=120),
+    id_curso int not null
+);
+alter table alumnos
+    add constraint FK_Alumos_Id_Curso
+    foreign key(id_curso)
+    references cursos(id);
+
+show tables;
+select * from cursos;
+select * from alumnos;

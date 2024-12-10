@@ -1,0 +1,3 @@
+Dado el software colegioAPPJSP y su base de datos:
+- Armar tabla de auditoria y triggers para auditar los movimientos del software (insert-delete-update),
+- Usando Triggers, interceptar las acciones de delete físico y mover registros borrados a una tabla alternativa.

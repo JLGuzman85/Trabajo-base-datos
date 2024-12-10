@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: ar.com.eduit.curso.java.web.colegio.ColegioApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.888 s - in ar.com.eduit.curso.java.web.colegio.ColegioApplicationTests
